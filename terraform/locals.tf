@@ -27,7 +27,7 @@ locals {
       cron_expression = "cron(0 9 1 * ? *)" # every month on the 1st at 9am
       payload = jsonencode({
         amount              = 20
-        action              = "request"
+        action              = "payment"
         note                = "Here's some moneys"
         recipient_user_name = "Matthew-Rice-26"
       })
