@@ -94,4 +94,4 @@ Terraform will use the **venmo-action-automation/package_lambda.sh** script to p
 You will be prompted to provide the Venmo API token which was generated in the previous step. Paste the token into your terminal when prompted. The ```terraform apply``` command will prompt you to accept the planned changes; enter "yes" to deploy the resources.
 
 ## Acknowledgements
-This project leverages the venmo-api created and maintained by Mark Mohades (@mmohades).
+This project leverages the venmo-api created and maintained by Mark Mohades [Mark Mohades](https://github.com/mmohades).
