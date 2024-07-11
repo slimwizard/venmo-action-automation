@@ -18,6 +18,8 @@ resource "aws_cloudwatch_log_metric_filter" "lambda_error_filter" {
     namespace = local.metric_namespace
     value     = "1"
   }
+
+  depends_on = [aws_cloudwatch_log_group.venmo_lambda_log_group]
 }
 
 resource "aws_cloudwatch_metric_alarm" "lambda_error_alarm" {
