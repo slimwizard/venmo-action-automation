@@ -19,3 +19,8 @@ resource "aws_lambda_function" "venmo_lambda" {
     }
   }
 }
+
+resource "aws_cloudwatch_log_group" "venmo_lambda_log_group" {
+  name              = "/aws/lambda/${aws_lambda_function.venmo_lambda.function_name}"
+  retention_in_days = 14
+}
